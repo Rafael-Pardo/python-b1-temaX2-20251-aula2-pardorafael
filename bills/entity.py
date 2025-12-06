@@ -24,7 +24,7 @@ class Person:
 class Buyer(Person):
     def __init__(self, dni: str, email: str, mobile: str, full_name: str, age: int, address: str):
         # Write here your code
-        super().__init__(dni,email,movile)
+        super().__init__(dni,email,mobile)
 
     def print(self):
         # Do not change this method
@@ -32,9 +32,9 @@ class Buyer(Person):
 
 class Seller(Person):
     # Write the parameters in the next line
-    def __init__():
+    def __init__(self, dni: str, email: str, mobile: str, bussines_name: str, bussines_address: str):
         # Write here your code        
-        pass
+        super().__init__(dni,email,mobile)
         
     def print(self):
         # Do not change this method
