@@ -3,7 +3,11 @@ from abc import ABC, abstractmethod
 class Person:
     def __init__(self, dni: str, email: str, mobile: str):
         # Write here your code
-        pass
+        self.dni=dni
+        self.email=email
+        self.mobile=mobile
+        
+        
 
     @abstractmethod
     def print(self):
@@ -20,7 +24,7 @@ class Person:
 class Buyer(Person):
     def __init__(self, dni: str, email: str, mobile: str, full_name: str, age: int, address: str):
         # Write here your code
-        pass
+        super().__init__(dni,email,movile)
 
     def print(self):
         # Do not change this method
