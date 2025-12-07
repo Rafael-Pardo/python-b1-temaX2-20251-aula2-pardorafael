@@ -1,5 +1,5 @@
 # Write your imports here
-
+from bills.item import Product,Bill,Buyer
 
 
 class OrderType:
@@ -13,7 +13,7 @@ class Statistics:
         # Do not change this method
         self.bills = bills
 
-    def find_top_sell_product(self) -> (Product, int):
+    def find_top_sell_product(self) -> Product:
         # Write here your code
         pass
 
@@ -21,7 +21,7 @@ class Statistics:
         # Write here your code
         pass
 
-    def find_buyer_lowest_total_purchases(self) -> (Buyer, float):
+    def find_buyer_lowest_total_purchases(self) -> Buyer:
         # Write here your code
         pass
 

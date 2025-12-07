@@ -93,16 +93,18 @@ suma total de impuestos. Por ejemplo:
 [(<bills.item.Product object at 0x000001A5B79D2A50>, 180.0), (<bills.item.Product object at 0x000001A5B79D2910>, 37.08)]
 
 """
-
-from bills import *
-from util_package.bill_manager import BillManager
-
+from bills.entity import Seller
+from bills.stats import OrderType
+from util_package.bill_manager import BillManager,Seller,Bill,Buyer
+from bills.stats import Statistics
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
-#bill_manager = BillManager()
-#bills = bill_manager.create_bills_example()
-#statistics = Statistics(bills)
+bill_manager = BillManager()
+bills = bill_manager.create_bills_example()
+statistics = Statistics(bills)
 #statistics.show()
-#print(statistics.find_top_sell_product())
-#print(statistics.find_buyer_lowest_total_purchases())
-#print(statistics.find_top_two_sellers())
-#print(statistics.order_products_by_tax(OrderType.DES))
+print(statistics.find_top_sell_product())
+print(statistics.find_buyer_lowest_total_purchases())
+print(statistics.find_top_two_sellers())
+print(statistics.order_products_by_tax(OrderType.DES))
+#vendedor=BillManager.create_seller_S505(BillManager)
+#print(f"DNI: {vendedor.dni} EMAIL: {vendedor.email} MOBILE: {vendedor.mobile} NAME: {vendedor.name} ADDRESS: {vendedor.address} ")#

@@ -1,4 +1,5 @@
-from bills import *
+from bills import entity, stats, item
+from bills.stats import Statistics,OrderType
 import pytest
 from util_package.bill_manager import BillManager
 

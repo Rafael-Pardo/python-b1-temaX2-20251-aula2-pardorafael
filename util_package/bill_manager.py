@@ -1,4 +1,6 @@
-from bills import *
+from bills.entity import Person, Buyer,Seller
+from bills.item import Product,Bill,Tax,TaxType
+from bills.stats import OrderType,Statistics
 from datetime import date
 
 # Do not change the follwing class

@@ -24,7 +24,14 @@ class Person:
 class Buyer(Person):
     def __init__(self, dni: str, email: str, mobile: str, full_name: str, age: int, address: str):
         # Write here your code
+        self.dni=dni
+        self.email=email 
+        self.mobile=mobile 
+        self.name=full_name
+        self.age=age
+        self.address=address
         super().__init__(dni,email,mobile)
+
 
     def print(self):
         # Do not change this method
@@ -33,8 +40,15 @@ class Buyer(Person):
 class Seller(Person):
     # Write the parameters in the next line
     def __init__(self, dni: str, email: str, mobile: str, bussines_name: str, bussines_address: str):
-        # Write here your code        
+        # Write here your code 
+        self.dni=dni
+        self.email=email 
+        self.mobile=mobile 
+        self.name=bussines_name
+        self.address=bussines_address
+             
         super().__init__(dni,email,mobile)
+        
         
     def print(self):
         # Do not change this method
